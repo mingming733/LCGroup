@@ -18,9 +18,8 @@ class Solution(object):
         l1, l2, end = m - 1, n - 1, m + n - 1
         while l1 >= 0 and l2 >= 0:
         	if nums2[l2] > nums1[l1]:
-        		nums1[end] = nums2[l2] # supposed nums1 has enough space for m + n 
-        		                       # IndexError: list assignment index out of range
-        		l2 -= 1
+        		nums1[end] = nums2[l2] # supposed nums1 has enough space for m + n                      
+        		l2 -= 1                # IndexError: list assignment index out of range
         	else:
         		nums1[end] = nums1[l1]
         		l1 -= 1
@@ -34,7 +33,7 @@ m = 3
 n = 2
 test = Solution()
 test.merge(nums1, 3, nums2, 2)
-print nums1
+print nums1   
 
 
 
