@@ -12,3 +12,8 @@ class Solution:
                 i+=1
             elif nums[j]%2!=1:
                 j-=1
+
+nums = [2, 1, 2]
+i = Solution()
+i.partitionArray(nums)
+print nums

@@ -32,6 +32,6 @@ class Solution:
 
 
 
-nums = [1, -1, -2, 1, -2]
+nums = [5, 2, 2, 4]
 instance = Solution()
 print instance.minSubArray(nums)
