@@ -5,11 +5,30 @@ class Solution(object):
         :rtype: List[int]
         """
         result = list()
-        new_list = "".join(str(x) for x in digits)
-        new_val = int(new_list)+1
-        result = result + [ int(x) for x in str(new_val)]
+        n = len(digits)
+        num = 0
+        for a in range(n):
+             num+=digits[a]*(10**(n-1))
+             n-=1
+        num =num+1
+        result = result + [ int(x) for x in str(num)]
         return result
 
-digits = [10, 10]
-i = Solution()
-print i.plusOne(digits)
+
+
+
+    def plusOne_2(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+        for i in range(len(digits)-1,-1,-1):
+            if digits[i]!=9:
+                digits[i]+=1
+                return digits
+            else:
+                digits[i]=0
+                
+        digits[0]=1
+        digits+=[0]
+        return digits
