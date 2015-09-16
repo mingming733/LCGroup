@@ -9,7 +9,7 @@ class Solution(object):
         for i in range(len(nums) - 1, -1, -1): # backtracking
             if nums[i] == val:
                 nums[i], nums[j] = nums[j], nums[i] # it doesn't matter what you leave beyond the new length
-                j -= 1
+                j -= 1 # j points to the last item not equal to val
         return j + 1 # the index of array begins from 0, so the new length is j + 1
         
     # def removeElement(self, nums, val):

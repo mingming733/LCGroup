@@ -9,3 +9,7 @@ class Solution(object):
         new_val = int(new_list)+1
         result = result + [ int(x) for x in str(new_val)]
         return result
+
+digits = [10, 10]
+i = Solution()
+print i.plusOne(digits)

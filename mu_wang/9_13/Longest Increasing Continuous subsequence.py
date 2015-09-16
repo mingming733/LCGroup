@@ -16,10 +16,11 @@ class Solution:
                 desc = 1
                 asc += 1
                 maxAsc = max(asc,maxAsc)
-            else:
+            if A[i-1] > A[i]:
                 asc = 1
                 desc += 1
                 maxDesc = max(maxDesc,desc)
             
         maxLen = max(maxAsc,maxDesc)
-        return maxLen      
+        return maxLen  
+   

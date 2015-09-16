@@ -5,20 +5,20 @@
 #         self.end = e
 
 class Solution(object):
-    def merge(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: List[Interval]
-        """
-        # if not intervals:
-        # 	return []
-        rst = []
-        for i in sorted(intervals, key = lambda i: i.start):
-        	if rst and i.start <= rst[-1].end: 
-        		rst[-1].end = max(rst[-1].end, i.end)
-        	else:
-        		rst += i, # rst.append() it is a tuple iterator 
-        return rst 
+    # def merge(self, intervals):
+    #     """
+    #     :type intervals: List[Interval]
+    #     :rtype: List[Interval]
+    #     """
+    #     # if not intervals:
+    #     # 	return []
+    #     rst = []
+    #     for i in sorted(intervals, key = lambda i: i.start):
+    #     	if rst and i.start <= rst[-1].end: 
+    #     		rst[-1].end = max(rst[-1].end, i.end)
+    #     	else:
+    #     		rst += i, # rst.append() it is a tuple iterator 
+    #     return rst 
 
     def merge(self, intervals):
     	intervals.sort(key = lambda x: x.start)
