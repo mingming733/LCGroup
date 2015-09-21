@@ -16,7 +16,7 @@ class Solution(object):
         	head = head.next
         	curr.next = prev
         	prev = curr
-        return prev 
+        return prev   
 
     def reverseList(self, head): # recursive 
     	return self.reverse(head)
