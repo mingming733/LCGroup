@@ -21,7 +21,7 @@ class Solution(object):
         	else:
         		p2 = p2.next = head
         	head = head.next
-        p2.next = None
+        p2.next = None # 断开尾巴 防止循环
         p1.next = node2.next
         return node1.next 
 
