@@ -1,5 +1,6 @@
 
 public class PlusOne {
+	//another method can compare if every element are 9 or not, then there are two situation: all 9; not all 9
 	public static int[] plusOne (int [] digits){
 		int carry = 1;
 		for (int i = digits.length -1; i >= 0 && carry > 0; i --){
@@ -20,5 +21,13 @@ public class PlusOne {
 		
 	}
 
+	public static void main (String [] args){
+		int [] a = {1,9};
+		int []array1 = plusOne (a);
+		for (int i = 0; i < array1.length; i ++){
+			System.out.println(array1[i]);
+		}
+		
+	}
 
 }

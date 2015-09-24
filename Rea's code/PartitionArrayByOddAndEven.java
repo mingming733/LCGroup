@@ -1,11 +1,14 @@
 
 public class PartitionArrayByOddAndEven {
-	public void partitionArrayByOddAndEven(int [] nums) {
+	public static int [] partitionArrayByOddAndEven(int [] nums) {
+		//still have question on this solution
+		//another solution: using two pointers one for start, one for end, only if start is odd, end is even, 
+		//in this case, swap; if not, keep moving.
 		
 		int start;
 		int end = nums.length;
 		if (nums.length == 0 || nums == null){
-			return;
+			return null;
 		}
 		for (start = 0; start < end; start ++){
 			if (nums[start] % 2 == 0){
@@ -15,5 +18,14 @@ public class PartitionArrayByOddAndEven {
 				start --;
 			}
 		}
+		return nums;
+	}
+	public static void main (String[]args){
+		int [] array1 = {2, 2 ,2};
+		int [] array2 = partitionArrayByOddAndEven (array1);
+		for (int i = 0; i < array2.length; i ++){
+			System.out.println (array2[i]);
+		}
+		
 	}
 }
