@@ -18,3 +18,4 @@ public class SearchInsertPosition {
 		return index;
 	}
 }
+//another method can use binary search
