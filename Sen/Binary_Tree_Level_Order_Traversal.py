@@ -1,26 +1,26 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 class Solution:
     # @param {TreeNode} root
     # @return {integer[][]}
 ### solution one    
-    def preorder(self, root, level, res):
-    	if root:
-    		if len(res) < level + 1:
-    			res.append([])
-    		res[level].append(root.val)
-    		self.preorder(root.left, level + 1, res)
-    		self.preorder(root.right, level + 1, res)
+    # def preorder(self, root, level, res):
+    # 	if root:
+    # 		if len(res) < level + 1:
+    # 			res.append([])
+    # 		res[level].append(root.val)
+    # 		self.preorder(root.left, level + 1, res)
+    # 		self.preorder(root.right, level + 1, res)
 
-    def levelOrder(self, root):
-    	res = []
-    	self.preorder(root, 0, res)
-    	return res 
+    # def levelOrder(self, root):
+    # 	res = []
+    # 	self.preorder(root, 0, res)
+    # 	return res 
 
 ### solution two
     def levelOrder(self, root):
@@ -38,3 +38,15 @@ class Solution:
     				nextlvl.append(i.right)
     		crt = nextlvl
     	return rst 
+
+root = TreeNode(3)
+root.left = TreeNode(9)
+root.right = TreeNode(20)
+root.right.left = TreeNode(15)
+root.right.right = TreeNode(7)
+
+i = Solution()
+print i.levelOrder(root)
+
+
+

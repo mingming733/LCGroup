@@ -15,7 +15,7 @@ class Solution(object):
         self.addlevel(rst, 0, root) # level from 0 
         return rst 
 
-    def addlevel(self, rs, level, root):
+    def addlevel(self, rst, level, root):
         if not root: # check if root is a leaf 
             return 
         elif len(rst) <= level: # when reaching a new level: 1. '<' when rst is empty; 2. '=' after inserting rootnode, len(srt) always is equal to the new level because level begins from 0 
@@ -55,3 +55,12 @@ class Solution(object):
     #                 crt = nextlvl
     #                 fromRight = True
     #     return rst
+
+
+
+
+
+
+
+
+        
