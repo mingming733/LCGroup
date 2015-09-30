@@ -24,5 +24,5 @@ class Solution(object):
         		if i.right:
         			nextlvl.append(i.right)
         	crt = nextlvl
-        # rst = list(reversed(rst))
+        # rst = list(reversed(rst)) # it has to have "list()" because reversed() just return an reversed iterator instead of list. 
         return rst
