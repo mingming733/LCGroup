@@ -7,6 +7,7 @@ class Solution(object):
         """
         v1 = version1.split(".")
         v2 = version2.split(".")
+        print v1, v2 
         len1 = len(v1)
         len2 = len(v2)
         lenMax = max(len1, len2)
@@ -22,7 +23,7 @@ class Solution(object):
                 return 1
         return 0 
 
-version1 = "2.1.2"
-version2 = "2.1.2"
+version1 = "2.2.2"
+version2 = "2.2.2"
 i = Solution()
 print i.compareVersion(version1, version2)

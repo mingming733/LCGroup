@@ -8,7 +8,7 @@ class Solution(object):
         if numRows == 1:
         	return s
         period = 2 * (numRows - 1) # calculate the period 
-        lines = ["" for i in range(numRows)] # how many lines
+        lines = ["" for i in range(numRows)] # how many lines 
         d = {}
         for i in range(period):
         	if i < numRows:

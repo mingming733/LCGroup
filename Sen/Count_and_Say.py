@@ -21,6 +21,7 @@ class Solution(object):
                 count += 1 
         t += str(count) + curr
         return t
+
 n = 6
 i = Solution()
 print i.countAndSay(n)

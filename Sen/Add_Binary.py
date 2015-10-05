@@ -38,6 +38,7 @@ class Solution(object):
         	return self.addBinary(a[0 : -1], b[0 : -1]) + "0"
         else:
         	return self.addBinary(a[0 : -1], b[0 : -1]) + "1"
+            
 a = "11"; b = "1"
 i = Solution()
 print i.addBinary(a, b)

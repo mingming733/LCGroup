@@ -22,7 +22,13 @@ class Solution(object):
     		maxSum = max(maxSum, curSum)
     	return maxSum
 
-    def maxSubArray(self, nums): # Divide and Conquer
+    # def maxSubArray(self, nums): # Divide and Conquer
+
+nums = [7, 9, -11, 10, -7]
+i = Solution()
+print i.maxSubArray(nums)
+
+
 
 
 
