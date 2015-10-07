@@ -17,3 +17,4 @@ public class Solution {
      return true;
     }
 }
+//rule: no two characters may map to the same character
