@@ -16,11 +16,11 @@ class Solution(object):
         # validate 3x3 squares
         for i in (0, 3, 6): # for horizontal traversal
             for j in (0, 3, 6): # for vertical traversal  
-                square = []
-                for m in (0, 1, 2):
-                    for n in (0, 1, 2):
-                        square.append(board[i + m][j + n])
-                # square = [board[i + m][j + n] for m in (0, 1, 2) for n in (0, 1, 2)]
+                # square = []
+                # for m in (0, 1, 2):
+                #     for n in (0, 1, 2):
+                #         square.append(board[i + m][j + n])
+                square = [board[i + m][j + n] for m in (0, 1, 2) for n in (0, 1, 2)]
                 if square.count('.') + len(set(square)) - 1 != 9: 
                     return False
         return True 
