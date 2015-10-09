@@ -12,3 +12,18 @@ public class Solution {
         
     }
 }
+
+
+
+public class Solution {
+    public boolean isPowerOfTwo(int n) {
+        double m=n;
+        while(m>=1.0){
+        if(m==1.0){
+            return true;
+        }
+         m=m/2.0;
+        }
+        return false;
+    }
+}
