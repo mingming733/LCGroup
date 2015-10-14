@@ -5,7 +5,7 @@ class ListNode(object):
         self.next = None
 
 class Solution(object):
-    def isPalindrome(self, head):
+    def isPalindrome(self, head): # space: O(1)
         """
         :type head: ListNode
         :rtype: bool
@@ -35,7 +35,7 @@ class Solution(object):
 
 
 
-    # def isPalindrome(self, head): # space: n / 2
+    # def isPalindrome(self, head): # 
     #     if not head:
     #         return True
     #     lst = list()
