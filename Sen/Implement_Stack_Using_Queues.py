@@ -4,9 +4,10 @@ class Stack(object):
         self.queue = collections.deque()
 
     def push(self, x):
-        self.queue.append(x)
-        for i in range(len(self.queue) - 1):
+        self.queue.append(x) # add the new item into the tail of queue
+        for i in range(len(self.queue) - 1): # move other items hehide the new one by one
             self.queue.append(self.queue.popleft())
+        print self.queue
 
     def pop(self):
         return self.queue.popleft()
@@ -68,5 +69,6 @@ class Stack(object):
 i = Stack()
 i.push(1)
 i.push(2)
+i.push(3)
 print i.top()
 print i.top()
