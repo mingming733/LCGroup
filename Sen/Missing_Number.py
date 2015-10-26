@@ -1,18 +1,18 @@
 class Solution(object):
-    # def missingNumber(self, nums): # Math
-    #     """
-    #     :type nums: List[int]
-    #     :rtype: int
-    #     """
-    #     n = len(nums)
-    #     return n * (n + 1) / 2 - sum(nums)
+    def missingNumber(self, nums): # Math
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        return n * (n + 1) / 2 - sum(nums)
 
-    # def missingNumber(self, nums): # Bits Munipulation
-    # 	rst = len(nums)
-    # 	for i in range(len(nums)):
-    # 		rst ^= i
-    # 		rst ^= nums[i]
-    # 	return rst
+    def missingNumber(self, nums): # Bits Munipulation
+    	rst = len(nums)
+    	for i in range(len(nums)):
+    		rst ^= i
+    		rst ^= nums[i]
+    	return rst
 
     def missingNumber(self, nums): # Binary Search
     	nums.sort()
