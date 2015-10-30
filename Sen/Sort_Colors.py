@@ -38,6 +38,6 @@ class Solution(object):
         # return nums
 
 
-nums = [1, 0, 2, 0, 1, 2, 0]
+nums = [0, 1, 0, 1, 2]
 i = Solution()
 print i.sortColors(nums)

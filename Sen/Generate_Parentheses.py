@@ -37,6 +37,6 @@ class Solution(object):
         
 
 
-n = 2
+n = 3
 i = Solution()
 print i.generateParenthesis(n)
