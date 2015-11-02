@@ -5,7 +5,7 @@ public class Solution {
         }
         int[] nums=new int[s.length()+1];
         nums[0]=1;
-        nums[1]=s.charAt(0)!='0'?1:0;
+        nums[1]=s.charAt(0)!='0'?1:0; //??
         for(int i=2;i<=s.length();i++){
             if(s.charAt(i-1)!='0'){
                 nums[i]=nums[i-1];
