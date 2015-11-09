@@ -16,8 +16,13 @@ class Solution(object):
             return None
         if len(inorder) == 1:
             return TreeNode(inorder[0])
-        root = TreeNode(preorder[0])
+        root = TreeNode(preorder.pop(0))
+        # root = TreeNode(preorder[0])
         index = inorder.index(root.val)
-        root.left = self.buildTree(preorder[1 : index], inorder[: index])
-        root.right = self.buildTree(preorder[index + 1:], inorder[index + 1:])
+        # root.left = self.buildTree(preorder[1 : index], inorder[: index]) # slice operation create a new list
+        root.left = self.buildTree(preorder, inorder[: index])
+        # root.right = self.buildTree(preorder[index + 1:], inorder[index + 1:])
+        root.right = self.buildTree(preorder, inorder[index + 1:])
         return root
+
+    # def buildTreeHelper(preorder, inorder, preUpper, preLower, inUpper, inLower) # try to avoid MLE 
