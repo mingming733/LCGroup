@@ -15,7 +15,8 @@ class Solution(object):
         while root:
             if root.left:
                 p = root.left
-                while p.right: p = p.right
+                while p.right: 
+                    p = p.right
                 p.right = root.right
                 root.right = root.left
                 root.left = None
@@ -34,6 +35,7 @@ class Solution(object):
             if stack:
                 curr.right = stack[-1]
             curr.left = None
+
 
 root = TreeNode(1)
 root.left = TreeNode(2)

@@ -25,12 +25,7 @@ class Solution(object):
             for j in range(len(triangle[i])):
                 res[j] = min(res[j], res[j + 1]) + triangle[i][j]
         return res[0]
-triangle = [
-     [2],
-    [3,4],
-   [6,5,7],
-  [4,1,8,3]
-]
+
 i = Solution()
 print i.minimumTotal(triangle)
 
