@@ -31,3 +31,4 @@ public class Solution {
         return null;
     }
 }
+//t=x+ny+k, 2t=x+my+k, so 2x+2n+2k=x+my+k, so x+k=(m-2n)y
